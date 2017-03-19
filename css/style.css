@@ -1,0 +1,104 @@
+/*
+    Created on : 10 janv. 2017, 09:47:32
+    Author     : Guillyan
+*/
+
+/* - - - - - - - - - - COULEUR CSS - - - - - - - - - - */
+
+/* Changer la valeur de la variable --color pour changer la couleur principale de l'appli */
+:root {
+    --r6darkblue: #0F1720;
+    --colorSec: grey;
+    --r6yellow: #FDDC01;
+}
+
+.couleurPrincipale {
+    background-color: var(--r6darkblue) !important;
+}
+
+/* Change la couleur du rond du levier */
+.switch label input[type=checkbox]:checked+.lever:after {
+    background-color: var(--r6darkblue) !important;
+}
+
+/* Change la couleur de fond du levier */
+.switch label input[type=checkbox]:checked+.lever {
+    background-color: var(--colorSec) !important;
+}
+
+.name {
+    font-size: 1.5rem;
+}
+
+.imgOps {
+    height: 100px;
+    width: 100px;
+}
+
+.opsMenu {
+    height: 80px;
+    font-size:2rem;
+}
+
+#page {
+    text-align: center;
+}
+
+#operator {
+    font-weight: bold;
+}
+
+.margin {
+    margin: 7px;
+}
+
+.marginTop {
+    margin-top: 5px;
+}
+
+/* Enleve le surlignement bleu du label */
+.switch label{
+    cursor:none !important;
+}
+
+#def, #atk {
+    font-size: 1.3rem;
+}
+
+.front {
+    z-index: 1;
+    position: fixed;
+}
+
+#canvas {
+    position: absolute;
+    width: 100%;
+    overflow:none;
+}
+
+/* ----- MATERIAL ICONS LOCAL ----- */
+/**
+* instead of linking from https://fonts.googleapis.com/icon?family=Material+Icons
+*/
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Material Icons'), local('MaterialIcons-Regular'),
+        url(fonts/materialicons.woff2) format('woff2');
+}
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    word-wrap: normal;
+
+    font-feature-settings: 'liga'; /* !!! make sure this is set !!! */
+    -webkit-font-feature-settings: 'liga';  
+    -webkit-font-smoothing: antialiased;
+}

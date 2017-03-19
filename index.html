@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>Siege Randomizer</title>
+
+        <!-- Personnal CSS -->
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <!-- Materialize CSS -->
+        <link href="css/materialize.min.css" rel="stylesheet" type="text/css"/>
+        <!-- Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Désactiver l'erreur Favicon -->
+        <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+        <!-- Accents/Symboles -->
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+        <!-- Optimisation pour mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+        <nav class="nav-extended couleurPrincipale front">
+            <div class="nav-wrapper front">
+                <a class="brand-logo"><img src="img/R6S_logo.png" alt=""/></a>
+            </div>
+            <div class="nav-content">
+                <ul class="tabs tabs-transparent">
+                    <li class="tab"><a class="active" href="#optRandomizer">Randomizer</a></li>
+                    <li class="tab"><a href="#optOperateurs">Opérateurs</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="nav-extended couleurPrincipale">
+            <div class="nav-wrapper front">
+            </div>
+            <div class="nav-content">
+                <ul class="tabs tabs-transparent">
+                    <li class="tab"></li>
+                    <li class="tab"></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="page">
+            <div id="optRandomizer" class="container">
+                <!-- Switch -->
+                <div class="switch margin">
+                    <label>
+                        <a id="def" class="grey-text yellow black-text">Defense</a>
+                        <input id="type" type="checkbox" onchange="changeSelect();">
+                        <span class="lever"></span>
+                        <a id="atk" class="grey-text">Attaque</a>
+                    </label>
+                </div>
+                <!-- Button -->
+                <a class="btn-floating btn-large waves-effect waves-light couleurPrincipale margin" onclick="getRandomOps();">
+                    <i class="material-icons marginTop">repeat</i>
+                </a>
+                <div class="input-field">
+                    <input id="operator" placeholder="Opérateur" type="text" readonly>
+                    <label for="operator">Résultat</label>
+                    <div id="history">
+                    </div>
+                </div>
+            </div>
+            <ul id="optOperateurs" class="collapsible" data-collapsible="accordion" hidden>
+                <li>
+                    <div class="collapsible-header opsMenu valign-wrapper row">
+                        <!--<i class="material-icons name">flight_land</i>-->
+                        <div class="col s2 offset-s1">
+                            <img src="img/sword-outline.png" alt=""/>
+                        </div>
+                        <div class="col s8">
+                            <a class="yellow white-text valign">Attaquants</a>
+                        </div>
+                        <div class="col s2">
+                        </div>
+                    </div>
+                    <div class="collapsible-body">
+                        <ul id="AttkOps" class="collapsible" data-collapsible="accordion">
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header opsMenu valign-wrapper row">
+                        <!--<i class="material-icons name">flight_takeoff</i>-->
+                        <div class="col s2 offset-s1">
+                            <img src="img/shield-outline.png" class="name" alt=""/>
+                        </div>
+                        <div class="col s8">
+                            <a class="yellow white-text valign">Défenseurs</a>
+                        </div>
+                        <div class="col s2">
+                        </div>
+                    </div>
+                    <div class="collapsible-body">
+                        <ul id="DefOps" class="collapsible" data-collapsible="accordion">
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- JQUERY -->
+        <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+        <!-- - - - - - - - - - Materialize JS - - - - - - - - - -->
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <!-- - - - - - - - - - JS - - - - - - - - - -->
+        <script src="js/randomizer.js" type="text/javascript"></script>
+        <script>chargeTab();</script>
+    </body>
+</html>
