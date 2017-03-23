@@ -23,7 +23,7 @@ var attack = [
     ['Capitão', 'capitao.png', 'BOPE', 'TACTICAL CROSSBOW: Tactical crossbow firing asphyxiating bolts and micro smoke grenades.'],
     ['Blackbeard', 'blackbeard.png', 'Navy SEALs', 'RIFLE-SHIELD: Has a backup mounted shield to swap if the first one is damaged.'],
     ['Buck', 'buck.png', 'JTF2', 'SKELETON KEY: Toggles under-barrel shotgun attachment on his main weapon.'],
-    ['Glaz', 'glaz.png', 'Spetsnaz', ''],
+    ['Glaz', 'glaz.png', 'Spetsnaz', 'FLIP SIGHT: Toggles a magnification scope with sophisticated image sensors outlinig long range marks, even through smoke.'],
     ['Fuze', 'fuze.png', 'Spetsnaz', 'CLUSTER CHARGE: Uses Cluster Charges that pierce and stick to walls, releasing sub-grenades on the opposite side.'],
     ['Blitz', 'blitz.png', 'GSG 9', 'FLASH SHIELD: Triggers the flash attached to his ballistic shield to temporarily blind enemies.'],
     ['IQ', 'iq.png', 'GSG 9', 'ELECTRONIC DETECTOR: Uses the Electronics Detector to locate any electronics in range through obstacles such as walls.'],
