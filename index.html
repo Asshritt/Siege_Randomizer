@@ -6,8 +6,6 @@
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <!-- Materialize CSS -->
         <link href="css/materialize.min.css" rel="stylesheet" type="text/css"/>
-        <!-- Material Icons -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Désactiver l'erreur Favicon -->
         <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
         <!-- Accents/Symboles -->
@@ -28,6 +26,7 @@
                 </ul>
             </div>
         </nav>
+        <!-- "Fausse" NavBar -->
         <nav class="nav-extended couleurPrincipale">
             <div class="nav-wrapper front">
             </div>
@@ -51,8 +50,9 @@
                 </div>
                 <!-- Button -->
                 <a class="btn-floating btn-large waves-effect waves-light couleurPrincipale margin" onclick="getRandomOps();">
-                    <i class="material-icons marginTop">repeat</i>
+                    <img class="responsive-img margin circle" src="img/repeat.png">
                 </a>
+
                 <div class="input-field">
                     <input id="operator" placeholder="Operator" type="text" readonly>
                     <label for="operator">Result</label>
@@ -63,7 +63,6 @@
             <ul id="optOperateurs" class="collapsible" data-collapsible="accordion" hidden>
                 <li>
                     <div class="collapsible-header opsMenu valign-wrapper row">
-                        <!--<i class="material-icons name">flight_land</i>-->
                         <div class="col s2 offset-s1">
                             <img src="img/sword-outline.png" alt=""/>
                         </div>
@@ -80,7 +79,6 @@
                 </li>
                 <li>
                     <div class="collapsible-header opsMenu valign-wrapper row">
-                        <!--<i class="material-icons name">flight_takeoff</i>-->
                         <div class="col s2 offset-s1">
                             <img src="img/shield-outline.png" class="name" alt=""/>
                         </div>

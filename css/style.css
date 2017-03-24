@@ -1,6 +1,6 @@
 /*
     Created on : 10 janv. 2017, 09:47:32
-    Author     : Guillyan
+    Author     : Asshritt
 */
 
 /* - - - - - - - - - - COULEUR CSS - - - - - - - - - - */
@@ -99,6 +99,6 @@
     word-wrap: normal;
 
     font-feature-settings: 'liga'; /* !!! make sure this is set !!! */
-    -webkit-font-feature-settings: 'liga';  
+    -webkit-font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased;
 }
